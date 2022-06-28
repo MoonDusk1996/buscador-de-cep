@@ -27,7 +27,7 @@ _cep.addEventListener("blur",(e)=>{
             }
     })
     .catch(function(erro){
-        _invalidText.innerHTML = "CPF inválido"
+        _invalidText.innerHTML = "CEP inválido"
         
     })
 })
