@@ -5,7 +5,16 @@ const _invalidText = document.querySelector("#invalidtext")
 
 
 //evento quando tabulado
-_cep.addEventListener("blur",(e)=>{
+_cep.addEventListener("blur", buscacep)
+_cep.addEventListener("keypress", function(e){
+    if (e.key === 'Enter'){
+        var btn = document.querySelector("#buscar")
+        btn.click()
+    }
+})
+
+function buscacep(){
+
     let search = _cep.value.replace("-","")
     const options = {
         method: 'GET',
@@ -30,4 +39,5 @@ _cep.addEventListener("blur",(e)=>{
         _invalidText.innerHTML = "CEP inválido"
         
     })
-})
+}
+
