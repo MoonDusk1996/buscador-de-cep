@@ -2,74 +2,12 @@
 <html lang="PT-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" href="/favcon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet" />
-    <title>Estudo de requests</title>
+    <title>Buscador de CEP</title>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <h1>Buscador de CEP</h1>
-      </header>
-
-      <main>
-        <input
-          id="CEP"
-          type="text"
-          onkeypress="return event.charCode >= 48 && event.charCode <= 57"
-          maxlength="8"
-          placeholder="CEP"
-        />
-        <button id="buscar" onclick="buscacep()">Buscar</button>
-        <small id="invalidtext"></small>
-      </main>
-
-      <form>
-        <div class="form-group">
-          <label for="logradouro">Rua:</label
-          ><input
-            type="text"
-            disabled
-            class="formcontrol"
-            id="logradouro"
-          /><small></small>
-        </div>
-        <div class="form-group">
-          <label for="Bairro">Bairro:</label
-          ><input
-            type="text"
-            disabled
-            class="formcontrol"
-            id="bairro"
-          /><small></small>
-        </div>
-        <div class="form-group">
-          <label for="Cidade">Cidade:</label
-          ><input
-            type="text"
-            disabled
-            class="formcontrol"
-            id="localidade"
-          /><small></small>
-        </div>
-        <div class="form-group">
-          <label for="UF">UF:</label
-          ><input
-            type="text"
-            disabled
-            class="formcontrol"
-            id="uf"
-          /><small></small>
-        </div>
-      </form>
-    </div>
-    <footer>
-      <p>
-        Projected by:
-        <a href="https://ultrautility.com.br">Ultra Utility Technology</a>
-      </p>
-    </footer>
-    <script src="script.js"></script>
+    <div id="app"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

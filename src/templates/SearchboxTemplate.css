@@ -1,0 +1,21 @@
+.searchbox--container{
+    margin-top: 50px;
+    margin-left:auto;
+    margin-right: auto;
+    width: 95vw;
+    height: 600px;
+}
+.high--results{
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.small--results{
+    display: flex;
+    justify-content: space-between;
+}
+.ui{
+
+    margin-top: 50px;
+}
