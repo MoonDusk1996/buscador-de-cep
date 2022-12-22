@@ -1,21 +1,26 @@
-.searchbox--container{
-    margin-top: 50px;
-    margin-left:auto;
-    margin-right: auto;
-    width: 95vw;
-    height: 600px;
+.searchbox--container {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95vw;
+  height: 600px;
 }
-.high--results{
-    display: flex;
-    margin-top: 50px;
-    flex-wrap: wrap;
-    flex-direction: column;
+.high--results {
+  display: flex;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
-.small--results{
-    display: flex;
-    justify-content: space-between;
+.small--results {
+  display: flex;
+  justify-content: space-between;
 }
-.ui{
+.ui {
+  margin-top: 50px;
+}
 
-    margin-top: 50px;
+@media screen and (min-width: 750px) {
+  .searchbox--container {
+    width: 500px;
+  }
 }
