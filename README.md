@@ -1,6 +1,6 @@
 
 # Buscador de cep 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/MoonDusk1996/buscador-de-cep/blob/main/LICENSE.md)
 
 
 Esssa aplicação web faz a busca do cep inserido e retorna informações do mesmo.
