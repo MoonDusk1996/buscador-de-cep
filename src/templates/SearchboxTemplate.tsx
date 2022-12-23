@@ -24,7 +24,7 @@ export default function SearchboxTemplate() {
         <div class="high--results">
           <TextField
             id="outlined-read-only-input"
-            label="Rua"
+            label="Logradouro"
             defaultValue={" "}
             value={undefined || data?.logradouro}
             size="small"
@@ -48,7 +48,7 @@ export default function SearchboxTemplate() {
           />
           <TextField
             id="outlined-read-only-input"
-            label="Cidade"
+            label="Localidade"
             defaultValue={" "}
             value={undefined || data?.localidade}
             size="small"
