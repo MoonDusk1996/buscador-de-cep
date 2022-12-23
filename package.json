@@ -24,7 +24,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MoonDusk1996/Buscador-de-CEP.git"
+    "url": "git+https://github.com/MoonDusk1996/buscador-de-cep.git"
   },
   "keywords": [
     "cep",
@@ -35,7 +35,7 @@
   "author": "Dusk",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MoonDusk1996/Buscador-de-CEP/issues"
+    "url": "https://github.com/MoonDusk1996/buscador-de-cep/issues"
   },
-  "homepage": "https://github.com/MoonDusk1996/Buscador-de-CEP#readme"
+  "homepage": "https://github.com/MoonDusk1996/buscador-de-cep#readme"
 }
