@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "deploy": "gh-pages -d build"
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "preview": "vite preview"    
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
@@ -38,5 +39,5 @@
   "bugs": {
     "url": "https://github.com/MoonDusk1996/Buscador-de-CEP/issues"
   },
-  "homepage": "https://github.com/MoonDusk1996/Buscador-de-CEP#readme"
+  "homepage": "https://github.com/MoonDusk1996/Buscador-de-CEP"
 }
