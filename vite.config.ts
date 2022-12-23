@@ -3,6 +3,6 @@ import preact from '@preact/preset-vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/buscador-de-cep/',
+  base: './',
   plugins: [preact()],
 })
