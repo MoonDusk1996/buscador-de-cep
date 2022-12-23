@@ -9,7 +9,7 @@ Esssa aplicação web faz a busca do cep inserido e retorna informações do mes
 
 - [Buscador de cep](https://orange-desert-0e94f4c10.2.azurestaticapps.net/)
     
-## Técnologias usadas
+## Tecnologias usadas
 
 ### Front-End
 - React
