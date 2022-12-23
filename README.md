@@ -7,7 +7,7 @@ Esssa aplicação web faz a busca do cep inserido e retorna informações do mes
 
 ## Link
 
-- [Buscador de cep](https://moondusk1996.github.io/Buscador-de-CEP/)
+- [Buscador de cep](https://orange-desert-0e94f4c10.2.azurestaticapps.net/)
     
 ## Técnologias usadas
 
@@ -15,6 +15,7 @@ Esssa aplicação web faz a busca do cep inserido e retorna informações do mes
 - React
 - Vite
 - Material UI
+- Azure
 
 ### API
 - ViaCEP
@@ -23,12 +24,13 @@ Esssa aplicação web faz a busca do cep inserido e retorna informações do mes
 
 ## Demo
 
-![Demostração](https://github.com/MoonDusk1996/assets/blob/main/Buscador-de-cep/ezgif.com-gif-maker.gif)
+![Demostração](https://github.com/MoonDusk1996/assets/blob/main/Buscador-de-cep/gifdemo.gif?raw=true)
 
 
 
 ## Referências
- - [Material UI](https://mui.com/)
  - [ReactJS]( https://reactjs.org/)
  - [Vite]( https://vitejs.dev/)
+ - [Material UI](https://mui.com/)
+ - [Azure](https://portal.azure.com/)
  - [ViaCep](https://viacep.com.br/)
