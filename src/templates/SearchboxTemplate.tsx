@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "preact/hooks";
 import "./SearchboxTemplate.css";
 import { dataTypes } from "../@types/types";
@@ -7,8 +8,12 @@ import GoogleIcon from "@mui/icons-material/Google";
 import { useFetch } from "../hooks/useFetch";
 
 export default function SearchboxTemplate() {
-  const [cep, setCep] = useState<string | undefined>(undefined);
+  const [cep, setCep] = useState<string>("");
   const { data, isFetch } = useFetch<dataTypes>(cep);
+
+  const handleSubmit = (env: any) => {
+    setCep(env.currentTarget.value);
+  };
 
   return (
     <>
@@ -16,7 +21,7 @@ export default function SearchboxTemplate() {
         <TextField
           id="outlined"
           label="Cep"
-          onChange={(env) => setCep(env.currentTarget.value)}
+          onChange={handleSubmit}
           size="small"
           error={data?.erro}
           helperText={data?.erro ? "Cep inválido" : null}
@@ -105,8 +110,8 @@ export default function SearchboxTemplate() {
               variant="contained"
               href={`https://www.google.com.br/maps/dir//${cep}`}
               target="_blank"
+              startIcon={<GoogleIcon />}
             >
-              <GoogleIcon sx={{ marginRight: "10px" }} />
               abrir no google maps
             </Button>
           ) : null}
