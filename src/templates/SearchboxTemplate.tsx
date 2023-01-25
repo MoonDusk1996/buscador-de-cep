@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "preact/hooks";
 import "./SearchboxTemplate.css";
 import { dataTypes } from "../@types/types";
@@ -7,12 +6,12 @@ import { Button, TextField } from "@mui/material/";
 import GoogleIcon from "@mui/icons-material/Google";
 import { useFetch } from "../hooks/useFetch";
 
-export default function SearchboxTemplate() {
-  const [cep, setCep] = useState<string>("");
-  const { data, isFetch } = useFetch<dataTypes>(cep);
+export default function SearchboxTemplate () {
+  const [ cep, setCep ]=useState<string>( "" );
+  const { data, isFetch }=useFetch<dataTypes>( cep );
 
-  const handleSubmit = (env: any) => {
-    setCep(env.currentTarget.value);
+  const handleSubmit=( env: any ) => {
+    setCep( env.currentTarget.value );
   };
 
   return (
@@ -21,46 +20,46 @@ export default function SearchboxTemplate() {
         <TextField
           id="outlined"
           label="Cep"
-          onChange={handleSubmit}
+          onChange={ handleSubmit }
           size="small"
-          error={data?.erro}
-          helperText={data?.erro ? "Cep inválido" : null}
+          error={ data?.erro }
+          helperText={ data?.erro? "Cep inválido":null }
         />
         <div class="high--results">
           <TextField
             id="outlined-read-only-input"
             label="Logradouro"
-            defaultValue={" "}
-            value={undefined || data?.logradouro}
+            defaultValue={ " " }
+            value={ undefined||data?.logradouro }
             size="small"
-            InputProps={{
+            InputProps={ {
               readOnly: true,
-            }}
-            sx={{ marginBottom: "25px" }}
+            } }
+            sx={ { marginBottom: "25px" } }
             disabled
           />
           <TextField
             id="outlined-read-only-input"
             label="Bairro"
-            defaultValue={" "}
-            value={undefined || data?.bairro}
+            defaultValue={ " " }
+            value={ undefined||data?.bairro }
             size="small"
-            InputProps={{
+            InputProps={ {
               readOnly: true,
-            }}
-            sx={{ marginBottom: "25px" }}
+            } }
+            sx={ { marginBottom: "25px" } }
             disabled
           />
           <TextField
             id="outlined-read-only-input"
             label="Localidade"
-            defaultValue={" "}
-            value={undefined || data?.localidade}
+            defaultValue={ " " }
+            value={ undefined||data?.localidade }
             size="small"
-            InputProps={{
+            InputProps={ {
               readOnly: true,
-            }}
-            sx={{ marginBottom: "25px" }}
+            } }
+            sx={ { marginBottom: "25px" } }
             disabled
           />
         </div>
@@ -68,53 +67,53 @@ export default function SearchboxTemplate() {
           <TextField
             id="outlined-read-only-input"
             label="UF"
-            defaultValue={" "}
-            value={undefined || data?.uf}
+            defaultValue={ " " }
+            value={ undefined||data?.uf }
             size="small"
-            InputProps={{
+            InputProps={ {
               readOnly: true,
-            }}
-            sx={{ width: "30%" }}
+            } }
+            sx={ { width: "30%" } }
             disabled
           />
           <TextField
             id="outlined-read-only-input"
             label="DDD"
-            defaultValue={" "}
-            value={undefined || data?.ddd}
+            defaultValue={ " " }
+            value={ undefined||data?.ddd }
             size="small"
-            InputProps={{
+            InputProps={ {
               readOnly: true,
-            }}
-            sx={{ width: "30%" }}
+            } }
+            sx={ { width: "30%" } }
             disabled
           />
           <TextField
             id="outlined-read-only-input"
             label="Siafi"
-            defaultValue={" "}
-            value={undefined || data?.siafi}
+            defaultValue={ " " }
+            value={ undefined||data?.siafi }
             size="small"
-            InputProps={{
+            InputProps={ {
               readOnly: true,
-            }}
-            sx={{ width: "30%" }}
+            } }
+            sx={ { width: "30%" } }
             disabled
           />
         </div>
         <div class="ui">
-          {isFetch && !data?.erro ? (
+          { isFetch&&!data?.erro? (
             <Button
-              style={{ backgroundColor: "#ff8a30" }}
+              style={ { backgroundColor: "#ff8a30" } }
               fullWidth
               variant="contained"
-              href={`https://www.google.com.br/maps/dir//${cep}`}
+              href={ `https://www.google.com.br/maps/dir//${ cep }` }
               target="_blank"
-              startIcon={<GoogleIcon />}
+              startIcon={ <GoogleIcon /> }
             >
               abrir no google maps
             </Button>
-          ) : null}
+          ):null }
         </div>
       </div>
     </>

@@ -1,9 +1,9 @@
 import { useState, useEffect } from "preact/hooks";
-export function useFetch<T = unknown>(cep: string) {
-  const [data, setData] = useState<T | undefined>(undefined);
-  const [isFetch, setIsFetch] = useState<boolean>(false);
+export function useFetch<T=unknown>(cep: string) {
+  const [data, setData]=useState<T|undefined>(undefined);
+  const [isFetch, setIsFetch]=useState<boolean>(false);
 
-  if (cep?.length >= 8) {
+  if (cep?.length>=8) {
     useEffect(() => {
       fetch(`https://viacep.com.br/ws/${cep}/json/`, {
         method: "GET",
