@@ -15,7 +15,6 @@ Esssa aplicação web faz a busca do cep inserido e retorna informações do mes
 - React
 - Vite
 - Material UI
-- Azure
 
 ### API
 - ViaCEP
